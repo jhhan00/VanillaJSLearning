@@ -1,5 +1,5 @@
 // openweathermap.org 사이트에 로그인 후 API 키 받아오기
-const API_KEY = "89df5497eff532a13168a5062e009cee";
+const API_KEY = "";
 
 const span_weather = document.querySelector("#weather span:first-child");
 const span_city = document.querySelector("#weather span:last-child");
