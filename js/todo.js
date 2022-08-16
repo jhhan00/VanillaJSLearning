@@ -14,13 +14,14 @@ function deleteTodo(event) {
     li.remove();
 }
 
-function paintToDo(newTodo) {
+function paintToDo(newTodoObj) {
     const li = document.createElement("li");
     const span = document.createElement("span");
     const button = document.createElement("button");
 
-    span.innerText = newTodo;
-    button.innerText = "🗑";
+    li.id = newTodoObj.id;;
+    span.innerText = newTodoObj.text;
+    button.innerText = "Delete";
     button.addEventListener("click", deleteTodo);
 
     li.appendChild(span);
@@ -33,8 +34,14 @@ function handleToDoSubmit(event) {
     
     const newTodo = todoInput.value;
     todoInput.value = "";
-    todos.push(newTodo);
-    paintToDo(newTodo);
+
+    const newTodoObj = {
+        text: newTodo,
+        id: Date.now()
+    }
+
+    todos.push(newTodoObj);
+    paintToDo(newTodoObj);
     saveTodos();
 }
 
