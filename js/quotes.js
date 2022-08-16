@@ -20,7 +20,7 @@ const quotes = [
         author: "Mark Twain"
     },
     {
-        quote: "I don't go by the rule book…I lead from the heart, not the head.",
+        quote: "I don't go by the rule book… I lead from the heart, not the head.",
         author: "Princess Diana"
     },
     {
@@ -46,10 +46,6 @@ const quotes = [
     {
         quote: "Life is what happens when you're busy making other plans",
         author: "John Lennon"
-    },
-    {
-        quote: "a",
-        author: "b"
     },
 ];
 

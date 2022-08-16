@@ -1,3 +1,11 @@
 .hidden {
     display: none;
 }
+
+.right-weather {
+    float: right;
+}
+
+.all-center {
+    text-align: center;
+}

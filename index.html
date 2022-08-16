@@ -7,21 +7,25 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>VanillaJS</title>
 </head>
-<body>
-    <h2 id="clock">00:00:00</h2>
-    <div id="weather">
-        <span></span>
-        <span></span>
+<body class="all-center">
+    <div>
+        <h2 id="clock">00:00:00</h2>
+        <div id="weather" class="right-weather">
+            <span>weather_data</span>
+            <span>city_data</span>
+        </div>
     </div>
     <form class="hidden" id="login-form">
         <input required maxlength="15" type="text" placeholder="What is your name?"/>
         <button>Login</button>
     </form>
+    <br/>
     <h1 class="hidden" id="greeting"></h1>
     <form class="hidden" id="todo-form">
-        <input type="text" placeholder="Write a To-Do and Press Enter" style="width: 200px;"/>
+        <input type="text" placeholder="Write a To-Do"/>
     </form>
     <ul class="hidden" id="todo-list"></ul>
+    <br/>
     <div class="hidden" id="quote">
         <span></span>
         <br/>
