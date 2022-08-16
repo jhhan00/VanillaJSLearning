@@ -8,7 +8,11 @@
     <title>VanillaJS</title>
 </head>
 <body>
-    <h2 id="clock">00:00</h2>
+    <h2 id="clock">00:00:00</h2>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
     <form class="hidden" id="login-form">
         <input required maxlength="15" type="text" placeholder="What is your name?"/>
         <button>Login</button>
@@ -20,6 +24,7 @@
     <ul class="hidden" id="todo-list"></ul>
     <div class="hidden" id="quote">
         <span></span>
+        <br/>
         <span></span>
     </div>
     <script src="js/login.js"></script>
